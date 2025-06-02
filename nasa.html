@@ -26,13 +26,28 @@
             font-size: 25px;
         }
 
-        .left {
+        .left-section {
             display: flex;
             gap: 20px;
             align-items: center;
         }
 
-        .end {
+        .explore-button {
+            border: 0;
+            padding: 15px 15px 15px 15px;
+            font-size: 20px;
+            color: white;
+            background-color: transparent;
+        }
+
+        .search-bar {
+            background-color: transparent;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            color: white
+        }
+
+        .end-section {
 
             display: flex;
             gap: 20px;
@@ -48,7 +63,7 @@
 
         }
 
-        .news {
+        .news-button {
             padding: 15px 10px 15px 10px;
             font-size: 20px;
             color: white;
@@ -56,7 +71,7 @@
             border: 0;
         }
 
-        .multimedia {
+        .multimedia-button {
             padding: 15px 10px 15px 10px;
             font-size: 20px;
             color: white;
@@ -64,7 +79,7 @@
             border: 0;
         }
 
-        .nasa {
+        .nasa-button {
             padding: 15px 0px 15px 0px;
             font-size: 20px;
             color: white;
@@ -74,12 +89,61 @@
 
         .live {
             border: 1px solid red;
+        }
+
+        .live {
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            padding: 0px 4px 0px 4px;
+            font-size: 12px;
 
 
         }
 
-        .nasa:hover .live {
+        .nasa-button:hover .live {
             background-color: red;
+        }
+
+        .news-button-hover-table {
+            width: 250px;
+            height: 300px;
+            border: 2px solid black;
+            position: absolute;
+            top: 80px;
+            right: 280px;
+            background-color: black;
+            display: none;
+            padding-left: 10px;
+            padding-top: 5px;
+
+        }
+
+        .news-button:hover~.news-button-hover-table {
+            display: block;
+
+        }
+
+        .table-content {
+            font-size: 20px;
+            padding-top: 13px;
+        }
+
+        .multimedia-hover-table {
+            width: 250px;
+            height: 300px;
+            border: 2px solid black;
+            position: absolute;
+            top: 80px;
+            right: 140px;
+            background-color: black;
+            display: none;
+            padding-left: 10px;
+            padding-top: 5px;
+
+        }
+
+        .multimedia-button:hover~.multimedia-hover-table {
+            display: block;
         }
 
         .hero {
@@ -93,7 +157,7 @@
             color: white;
         }
 
-        .heading-1 {
+        .main-heading {
             position: absolute;
             top: 35%;
             font-size: 70px;
@@ -107,7 +171,7 @@
 
         }
 
-        .button {
+        .nasa-mission-button {
             position: absolute;
             top: 60%;
             font-size: 15px;
@@ -121,7 +185,7 @@
 
         }
 
-        .lower {
+        .lower-section {
             position: absolute;
             top: 85%;
             font-size: 15px;
@@ -131,7 +195,7 @@
 
         }
 
-        .lower-button {
+        .lower-section-buttons {
             position: absolute;
             top: 90%;
             font-size: 15px;
@@ -140,7 +204,7 @@
 
         }
 
-        .b2 {
+        .lower-button {
 
             font-size: 20px;
             color: white;
@@ -159,64 +223,12 @@
 
         }
 
-        .live {
-            background-color: transparent;
-            color: rgb(255, 255, 255);
-            padding: 0px 4px 0px 4px;
-            font-size: 12px;
-
-
-        }
-
-        .table {
-            width: 250px;
-            height: 300px;
-            border: 2px solid black;
-            position: absolute;
-            top: 80px;
-            right: 280px;
-            background-color: black;
-            display: none;
-            padding-left: 10px;
-            padding-top: 5px;
-
-        }
-
-        .news:hover~.table {
-            display: block;
-
-        }
-
-        .table-content {
-            font-size: 20px;
-            padding-top: 13px;
-        }
-
-        .table-2 {
-            width: 250px;
-            height: 300px;
-            border: 2px solid black;
-            position: absolute;
-            top: 80px;
-            right: 140px;
-            background-color: black;
-            display: none;
-            padding-left: 10px;
-            padding-top: 5px;
-
-        }
-
-        .multimedia:hover~.table-2 {
-            display: block;
-
-        }
-
-        .button:hover {
+        .nasa-mission-button:hover {
             background-color: darkred;
             color: whitesmoke;
         }
 
-        .b2:hover {
+        .lower-button:hover {
             color: darkgray;
         }
 
@@ -224,7 +236,7 @@
             position: absolute;
             top: 90vh;
             left: 94%;
-            border: 3px solid  rgb(74, 73, 73);
+            border: 3px solid rgb(74, 73, 73);
             padding: 10px 10px 10px 10px;
             background-color: rgb(74, 73, 73);
             border-radius: 50%;
@@ -232,7 +244,8 @@
 
 
         }
-        .circle-image{
+
+        .circle-image {
             width: 50px;
             height: 50px;
             position: absolute;
@@ -241,9 +254,30 @@
             border: 3px solid white;
             border-radius: 50px;
         }
-       
+        .red-arrow{
+            width:30px ;
+            height: 30px;
+            position: absolute;
+            top:89.8vh;
+            left: 6%;
 
-        
+        }
+        .red-arrow-2{
+            width:30px ;
+            height: 30px;
+            position: absolute;
+            top:89.8vh;
+            left: 31%;
+
+        }
+        .red-arrow-3{
+            width:30px ;
+            height: 30px;
+            position: absolute;
+            top:89.8vh;
+            left: 65.3%;
+
+        }
     </style>
 </head>
 
@@ -251,22 +285,21 @@
 
     <div class="navbar">
 
-        <div class="left">
-            <button
-                style="border: 0;padding: 15px 15px 15px 15px; font-size: 20px; color: white; background-color:transparent;">Explore
-                <i class="bi bi-arrow-down-circle"></i></button>
-            <input type="search" placeholder="search"
-                style="background-color: transparent;padding-top: 6px;padding-bottom: 6px;color:white">
+        <div class="left-section">
+            <button class="explore-button">Explore <i class="bi bi-arrow-down-circle"></i></button>
+            <input type="search" placeholder="search" class="search-bar">
         </div>
 
         <div class="center">
             <img src="./img/nasa logo.png" alt="" class="img">
         </div>
-        <div class="end">
-            <button class="news">News & Events <i class="bi bi-chevron-down"></i></button> </button>
-            <button class="multimedia">Multimedia <i class="bi bi-chevron-down"></i></button>
-            <p class="nasa">Nasa+ <button class="live">Live</button></p>
-            <div class="table">
+
+        <div class="end-section">
+            <button class="news-button">News & Events <i class="bi bi-chevron-down"></i></button> </button>
+            <button class="multimedia-button">Multimedia <i class="bi bi-chevron-down"></i></button>
+            <p class="nasa-button">Nasa+ <button class="live">Live</button></p>
+
+            <div class="news-button-hover-table">
                 <h2 style="font-size: 30px;font-family: 'Times New Roman', Times, serif;">News & Events</h2>
                 <p class="table-content">News release</p>
                 <p class="table-content">recently published</p>
@@ -276,7 +309,8 @@
                 <p class="table-content">Events</p>
                 <p class="table-content">Media Resources</p>
             </div>
-            <div class="table-2">
+
+            <div class="multimedia-hover-table">
                 <h2 style="font-size: 30px;font-family: 'Times New Roman', Times, serif;">Multimedia</h2>
                 <p class="table-content">NASA+</p>
                 <p class="table-content">images</p>
@@ -291,29 +325,40 @@
     </div>
     <div class="hero">
 
-        <h1 class="heading-1">For The Benefit Of All</h1>
+        <h1 class="main-heading">For The Benefit Of All</h1>
         <p class="paragraph">NASA investigates the unknown in air and space,innovates for the benefit of <br>
             humanity,and inspires the world through discovey.</p>
-        <button class="button">
+
+        <button class="nasa-mission-button">
             <h2>NASA Missions</h2>
         </button>
-        <div class="lower">
+
+        <div class="lower-section">
             <p>CREWED LUNAR FLYBY</p>
             <p>PLANATARY DEFENCE</p>
             <p>COSMIC WONDERS</p>
         </div>
-        <div class="lower-button">
-            <button class="b2" style="padding-left: 2px;">Artemis </button>
-            <button class="b2" style="padding-left: 105px;">NEO Surveyor</button>
-            <button class="b2" style="padding-left: 35px;">Nancy Grace Roman Space Telescope</button>
+
+        <div class="lower-section-buttons">
+            <button class="lower-button" style="padding-left: 2px;">Artemis  </button>
+            <button class="lower-button" style="padding-left: 105px;">NEO Surveyor</button>
+            <button class="lower-button" style="padding-left: 35px;">Nancy Grace Roman Space Telescope</button>
         </div>
+        <div>
+            <img src="./img/redarroww.png" class="red-arrow">
+            <img src="./img/redarroww.png" class="red-arrow-2">
+            <img src="./img/redarroww.png" class="red-arrow-3">
+        </div>
+
         <div class="line">
             <p>______________________________________</p>
             <p>_____________________________________</p>
             <p>___________________________________________</p>
         </div>
+
         <div class="pause"><i class="bi bi-pause-fill"></i></div>
-        <div ><img src="./img/space2.jpg" alt="" class="circle-image"></div>
+        <div><img src="./img/space2.jpg" alt="" class="circle-image"></div>
+
     </div>
 </body>
 
