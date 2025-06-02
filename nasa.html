@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="shortcut icon" href="./image/nasa logo.png" type="image/x-icon">
     <meta charset="UTF-8">
@@ -7,15 +8,14 @@
     <title>nasa-website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <style>
-
-        
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        .navbar{
-            padding:0 30px;
+
+        .navbar {
+            padding: 0 30px;
             height: 12vh;
             width: 100%;
             background-color: black;
@@ -25,19 +25,21 @@
             color: aliceblue;
             font-size: 25px;
         }
-        .left{
+
+        .left {
             display: flex;
             gap: 20px;
             align-items: center;
         }
-        
-        .end{
+
+        .end {
 
             display: flex;
             gap: 20px;
 
         }
-        .img{
+
+        .img {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -45,34 +47,42 @@
             height: 70px;
 
         }
-        .news{
+
+        .news {
             padding: 15px 10px 15px 10px;
             font-size: 20px;
-            color: white; 
-            background-color:transparent;
-            border: 0;
-        }
-        .multimedia{
-            padding:  15px 10px 15px 10px;
-            font-size: 20px; 
-            color: white;
-            background-color:transparent;
-            border: 0;
-        }
-        .nasa{
-            padding:  15px 10px 15px 10px;
-            font-size: 20px; 
             color: white;
             background-color: transparent;
             border: 0;
         }
-        .live-div{
+
+        .multimedia {
+            padding: 15px 10px 15px 10px;
+            font-size: 20px;
+            color: white;
+            background-color: transparent;
+            border: 0;
         }
-        .live{
+
+        .nasa {
+            padding: 15px 0px 15px 0px;
+            font-size: 20px;
+            color: white;
+            background-color: transparent;
+            border: 0;
+        }
+
+        .live {
             border: 1px solid red;
-           
+
+
         }
-        .hero{
+
+        .nasa:hover .live {
+            background-color: red;
+        }
+
+        .hero {
             height: 88vh;
             width: 100%;
             background-image: url(./img/space.jpg);
@@ -82,20 +92,24 @@
             padding-left: 18px;
             color: white;
         }
-        .heading-1{
+
+        .heading-1 {
             position: absolute;
-            top:35% ;
+            top: 35%;
             font-size: 70px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
-        .paragraph{
+
+        .paragraph {
             position: absolute;
-            top:48% ;
+            top: 48%;
             font-size: 20px;
 
         }
-        .button{
+
+        .button {
             position: absolute;
-            top:60% ;
+            top: 60%;
             font-size: 15px;
             padding-left: 10px;
             padding-right: 10px;
@@ -104,48 +118,57 @@
             background-color: red;
             color: white;
             border-radius: 6px;
-           
+
         }
-        .lower{
+
+        .lower {
             position: absolute;
-            top:85% ;
+            top: 85%;
             font-size: 15px;
             display: flex;
             gap: 150px;
             font-family: Arial, Helvetica, sans-serif;
-            
+
         }
-        .lower-button{
+
+        .lower-button {
             position: absolute;
-            top:90% ;
+            top: 90%;
             font-size: 15px;
             display: flex;
             gap: 150px;
 
         }
-        .b2{
-            
-            font-size: 20px; 
+
+        .b2 {
+
+            font-size: 20px;
             color: white;
-            background-color:transparent;
+            background-color: transparent;
             border: 0;
 
 
         }
-        .line{
+
+        .line {
             position: absolute;
-            top:80% ;
+            top: 80%;
             display: flex;
             gap: 17px;
             color: rgb(129, 125, 125);
 
         }
-        .live-button{
-           padding-top: 10px;
-           color:red;        
-       
+
+        .live {
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            padding: 0px 4px 0px 4px;
+            font-size: 12px;
+
+
         }
-        .table{
+
+        .table {
             width: 250px;
             height: 300px;
             border: 2px solid black;
@@ -156,18 +179,20 @@
             display: none;
             padding-left: 10px;
             padding-top: 5px;
-            
+
         }
-        
-        .news:hover ~ .table{
+
+        .news:hover~.table {
             display: block;
 
         }
-        .table-content{
-           font-size: 20px;
-           padding-top: 13px;
+
+        .table-content {
+            font-size: 20px;
+            padding-top: 13px;
         }
-        .table-2{
+
+        .table-2 {
             width: 250px;
             height: 300px;
             border: 2px solid black;
@@ -178,83 +203,118 @@
             display: none;
             padding-left: 10px;
             padding-top: 5px;
-            
+
         }
-        .multimedia:hover ~ .table-2{
+
+        .multimedia:hover~.table-2 {
             display: block;
 
         }
-        .button:hover{
+
+        .button:hover {
             background-color: darkred;
             color: whitesmoke;
         }
-        .b2:hover{
+
+        .b2:hover {
             color: darkgray;
         }
+
+        .pause {
+            position: absolute;
+            top: 90vh;
+            left: 94%;
+            border: 3px solid  rgb(74, 73, 73);
+            padding: 10px 10px 10px 10px;
+            background-color: rgb(74, 73, 73);
+            border-radius: 50%;
+            font-size: 25px;
+
+
+        }
+        .circle-image{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 90vh;
+            left: 90%;
+            border: 3px solid white;
+            border-radius: 50px;
+        }
+       
+
+        
     </style>
 </head>
+
 <body>
-    
+
     <div class="navbar">
-        
+
         <div class="left">
-          <button style="border: 0;padding: 15px 15px 15px 15px; font-size: 20px; color: white; background-color:transparent;">Explore</button>
-          <input type="search" placeholder="search" style="background-color: transparent;padding-top: 6px;padding-bottom: 6px;color:white">
+            <button
+                style="border: 0;padding: 15px 15px 15px 15px; font-size: 20px; color: white; background-color:transparent;">Explore
+                <i class="bi bi-arrow-down-circle"></i></button>
+            <input type="search" placeholder="search"
+                style="background-color: transparent;padding-top: 6px;padding-bottom: 6px;color:white">
         </div>
 
         <div class="center">
-           <img src="./img/nasa logo.png" alt="" class="img">
+            <img src="./img/nasa logo.png" alt="" class="img">
         </div>
         <div class="end">
-           <button class="news">News & Events <i class="bi bi-chevron-down"></i></button> </button>
-           <button class="multimedia" >Multimedia <i class="bi bi-chevron-down"></i></button>
-           <p class="nasa">Nasa+</p>
-           <div class="live-div"> 
-              <button class="live">Live</button>
-           </div>
-           <div class="table">
-            <h2 style="font-size: 30px;font-family: 'Times New Roman', Times, serif;">News & Events</h2>
-            <p class="table-content">News release</p>
-            <p class="table-content">recently published</p>
-            <p class="table-content">podcast</p>
-            <p class="table-content">Blogs</p>
-            <p class="table-content">Social Media</p>
-            <p class="table-content">Events</p>
-            <p class="table-content">Media Resources</p>
-           </div>
-          <div class="table-2">
-            <h2 style="font-size: 30px;font-family: 'Times New Roman', Times, serif;">Multimedia</h2>
-            <p class="table-content">NASA+</p>
-            <p class="table-content">images</p>
-            <p class="table-content">NASA.LIVE</p>
-            <p class="table-content">NASA APPS</p>
-            <p class="table-content">podcast</p>
-            <p class="table-content">Events</p>
-            <p class="table-content">e-Books</p>
-           </div>
+            <button class="news">News & Events <i class="bi bi-chevron-down"></i></button> </button>
+            <button class="multimedia">Multimedia <i class="bi bi-chevron-down"></i></button>
+            <p class="nasa">Nasa+ <button class="live">Live</button></p>
+            <div class="table">
+                <h2 style="font-size: 30px;font-family: 'Times New Roman', Times, serif;">News & Events</h2>
+                <p class="table-content">News release</p>
+                <p class="table-content">recently published</p>
+                <p class="table-content">podcast</p>
+                <p class="table-content">Blogs</p>
+                <p class="table-content">Social Media</p>
+                <p class="table-content">Events</p>
+                <p class="table-content">Media Resources</p>
+            </div>
+            <div class="table-2">
+                <h2 style="font-size: 30px;font-family: 'Times New Roman', Times, serif;">Multimedia</h2>
+                <p class="table-content">NASA+</p>
+                <p class="table-content">images</p>
+                <p class="table-content">NASA.LIVE</p>
+                <p class="table-content">NASA APPS</p>
+                <p class="table-content">podcast</p>
+                <p class="table-content">Events</p>
+                <p class="table-content">e-Books</p>
+            </div>
         </div>
 
     </div>
     <div class="hero">
-       <h1 class="heading-1">For The Benefit Of All</h1>
-       <p class="paragraph">NASA investigates the unknown in air and space,innovates for the benefit of <br>
-        humanity,and inspires the world through discovey.</p>
-       <button class="button"><h2>NASA Missions</h2></button>
-    <div class="lower">
-       <p>CREWED LUNAR FLYBY</p>
-       <p>PLANATARY DEFENCE</p>
-       <p>COSMIC WONDERS</p>
-    </div>
-    <div class="lower-button">
-      <button class="b2" style="padding-left: 2px;" >Artemis </button>
-      <button class="b2" style="padding-left: 105px;">NEO Surveyor</button>
-      <button class="b2" style="padding-left: 35px;">Nancy Grace Roman Space Telescope</button>
-    </div>
-    <div class="line">
-        <p>______________________________________</p>
-        <p>_____________________________________</p>
-        <p>___________________________________________</p>
-    </div>
+
+        <h1 class="heading-1">For The Benefit Of All</h1>
+        <p class="paragraph">NASA investigates the unknown in air and space,innovates for the benefit of <br>
+            humanity,and inspires the world through discovey.</p>
+        <button class="button">
+            <h2>NASA Missions</h2>
+        </button>
+        <div class="lower">
+            <p>CREWED LUNAR FLYBY</p>
+            <p>PLANATARY DEFENCE</p>
+            <p>COSMIC WONDERS</p>
+        </div>
+        <div class="lower-button">
+            <button class="b2" style="padding-left: 2px;">Artemis </button>
+            <button class="b2" style="padding-left: 105px;">NEO Surveyor</button>
+            <button class="b2" style="padding-left: 35px;">Nancy Grace Roman Space Telescope</button>
+        </div>
+        <div class="line">
+            <p>______________________________________</p>
+            <p>_____________________________________</p>
+            <p>___________________________________________</p>
+        </div>
+        <div class="pause"><i class="bi bi-pause-fill"></i></div>
+        <div ><img src="./img/space2.jpg" alt="" class="circle-image"></div>
     </div>
 </body>
+
 </html>
